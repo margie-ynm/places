@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <title>Places we've been</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Places we've been</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add a location</h2>
+          <form id="places">
+
+            <div class="form-group">
+              <label for="new-location">Location</label>
+              <input type="text" class="form-control" id="new-location">
+            </div>
+
+            <div class="form-group">
+              <label for="highlights">Highlights</label>
+              <input type="text" class="form-control" id="highlights">
+            </div>
+
+            <div class="form-group">
+              <label for="dates">When did you travel?</label>
+              <input type="text" class="form-control" id="dates">
+            </div>
+
+            <div class="form-group">
+              <label for="tips">Tips</label>
+              <input type="text" class="form-control" id="tips">
+            </div>
+            
+            <button type="submit" class="btn">Add</button>
+          </form>
+          <div class="location-list">
+            <h2>Locations:</h2>
+            <ul id="locations">
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div id="show-locations">
+            <h2></h2>
+            <p>Location: <span class="location-name"></span></p>
+            <p>Highlights: <span class="highlight-name"></span></p>
+            <p>Dates of visit: <span class="dates-visit"></span></p>
+            <p>Tips: <span class="tip-name"></span></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
